@@ -13,7 +13,7 @@ const FetchData = async url => {
     const response = await fetch(url)
 
     if(!response.ok) {
-       throw new Error('Não foi possivel obter os dados');
+       throw new Error('Não foi possível obter os dados');
     }
 
     return response.json()
